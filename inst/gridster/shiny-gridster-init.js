@@ -1,4 +1,3 @@
-/*
 $(function(){ //DOM Ready
  
   // Initialize any divs with class gridster
@@ -20,4 +19,3 @@ $(function(){ //DOM Ready
   });
 
 });
-*/
