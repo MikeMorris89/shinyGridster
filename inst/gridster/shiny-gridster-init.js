@@ -11,7 +11,10 @@ $(function(){ //DOM Ready
 
     $(this).gridster({
       widget_margins: [marginx, marginy],
-      widget_base_dimensions: [width, height]
+      widget_base_dimensions: [width, height],
+      resize: {
+          enabled: true
+      }
     });
   });
 
