@@ -1,5 +1,6 @@
 #' Create a Gridster frame on a Shiny web page
 #'
+#' @param id Id of the Gridster frame
 #' @param marginx Horizontal margin between each grid item, in pixels.
 #' @param marginy Vertical margin between each grid item, in pixels.
 #' @param width Width of each tile, in pixels.
@@ -27,7 +28,7 @@
 #' }
 #' @import shiny
 #' @export
-gridster <- function(..., marginx = 16, marginy = 16, width = 140, height = 140) {
+gridster <- function(..., id, marginx = 16, marginy = 16, width = 140, height = 140) {
   addResourcePath(
     prefix = 'gridster',
     directoryPath = system.file('gridster', package='shinyGridster'))
@@ -45,7 +46,7 @@ gridster <- function(..., marginx = 16, marginy = 16, width = 140, height = 140)
                 href = 'gridster/shiny-gridster.css')
     )),
 
-    tags$div(class = "gridster",
+    tags$div(class = "gridster", id = id,
       tags$ul(
         `data-marginx` = marginx,
         `data-marginy` = marginy,
