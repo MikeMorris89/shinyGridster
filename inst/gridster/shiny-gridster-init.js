@@ -9,7 +9,7 @@ $(function(){ //DOM Ready
     var width   = Number(this.getAttribute('data-width'))   || 140;
     var height  = Number(this.getAttribute('data-height'))  || 140;
 
-    $(this).gridster({
+    window.gridster = $(this).gridster({
       widget_margins: [marginx, marginy],
       widget_base_dimensions: [width, height],
       resize: {
