@@ -39,6 +39,7 @@ gridster <- function(..., marginx = 16, marginy = 16, width = 140, height = 140)
                 type = 'text/css',
                 href = 'gridster/jquery.gridster.min.css'),
       tags$script(src = 'gridster/shiny-gridster-init.js'),
+      tags$script(src = 'shiny-gridster-bindings-test.js'),
       tags$link(rel = 'stylesheet',
                 type = 'text/css',
                 href = 'gridster/shiny-gridster.css')
