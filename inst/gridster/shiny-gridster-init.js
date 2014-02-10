@@ -12,9 +12,11 @@ $(function(){ //DOM Ready
     $(this).gridster({
       widget_margins: [marginx, marginy],
       widget_base_dimensions: [width, height],
+      serialize_params: function($w, wgd) { return {id: $w.id col: wgd.col, row: wgd.row, size_x: wgd.size_x, size_y: wgd.size_y } },
       resize: {
           enabled: true
-      }
+      };
+    
     });
   });
 
