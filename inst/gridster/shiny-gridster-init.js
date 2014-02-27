@@ -12,6 +12,7 @@ $(function(){ //DOM Ready
     $(this).gridster({
       widget_margins: [marginx, marginy],
       widget_base_dimensions: [width, height],
+      autogrow_cols: true,
       resize: {
           enabled: true
       }
